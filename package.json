@@ -1,0 +1,20 @@
+{
+  "name": "header-maker",
+  "version": "1.0.0",
+  "description": "A versatile header generator for source code files, supporting multiple languages and customization options.",
+  "bin": {
+    "header-maker": "header.sh"
+  },
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "header",
+    "generator",
+    "cli",
+    "bash",
+    "tool"
+  ],
+  "author": "Kim Ranzani - KMean",
+  "license": "MIT"
+}
