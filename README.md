@@ -84,21 +84,21 @@ Advanced Usage
 Generate a Python header with a timestamp in the border, right-aligned title, dynamic template, and a footer:
 
 ```bash
-header --py --timestamp --align right --template "Author: \$USER, Date: \$(date '+%Y-%m-%d')" --footer "END OF SCRIPT" "Custom Header Title" "Additional Info"
+header --sol --timestamp --template "Author: \$USER, Date: \$(date '+%Y-%m-%d')" --footer "END OF SCRIPT" "Custom Header Title" "Additional Info"
 ```
 
 Example Output:
 
 ```bash
-//---------- 2025-02-14 15:42:10 -----------//
-//             Custom Header Title          //
-//             Additional Info              //
-//  Author: yourusername, Date: 2025-02-14    //
-//---------- 2025-02-14 15:42:10 -----------//
+//------------------------ 2025-02-14 19:51:19 -------------------------//
+//                         Custom Header Title                          //
+//                           Additional Info                            //
+//                   Author: kmean, Date: 2025-02-14                    //
+//------------------------ 2025-02-14 19:51:19 -------------------------//
 
-//----------#############################----------//
-//                   END OF SCRIPT                 //
-//----------#############################----------//
+//----------------------------------------------------------------------//
+//                            END OF SCRIPT                             //
+//----------------------------------------------------------------------//
 ```
 ## Custom Border Example
 Generate a JavaScript header with a custom border character (#):
