@@ -104,14 +104,14 @@ Example Output:
 Generate a JavaScript header with a custom border character (#):
 
 ```bash
-header --js --char "#" "JS Header"
+header --sol --char "%" "My Header Title"
 ```
 Example Output:
 
 ```bash
-//---------- 2025-02-14 15:42:10 -----------//
-//                 JS Header                //
-//---------- 2025-02-14 15:42:10 -----------//
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
+//                           My Header Title                            //
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 ```
 ## Contributing
 Contributions are welcome! Feel free to fork the repository, open issues, and submit pull requests for improvements or additional features.
