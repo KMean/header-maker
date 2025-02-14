@@ -66,6 +66,11 @@ header --py "My Header Title"
 Note: Installing to /usr/local/bin requires sudo privileges.
 
 ## Usage
+
+check what options you have by running
+```bash
+header -h
+```
 Run the script with your desired options. Here are a few examples:
 
 ## Basic Usage
@@ -81,7 +86,7 @@ Example Output:
 //----------------------------------------------------------------------//
 ```
 Advanced Usage
-Generate a Python header with a timestamp in the border, right-aligned title, dynamic template, and a footer:
+Generate a Solidity header with a timestamp in the border, right-aligned title, dynamic template, and a footer:
 
 ```bash
 header --sol --timestamp --template "Author: \$USER, Date: \$(date '+%Y-%m-%d')" --footer "END OF SCRIPT" "Custom Header Title" "Additional Info"
@@ -101,7 +106,7 @@ Example Output:
 //----------------------------------------------------------------------//
 ```
 ## Custom Border Example
-Generate a JavaScript header with a custom border character (#):
+Generate a Solidity header with a custom border character (#):
 
 ```bash
 header --sol --char "%" "My Header Title"
