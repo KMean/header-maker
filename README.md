@@ -30,53 +30,88 @@ Header Maker is a versatile header generation tool for your source code files. I
 
 ## Installation
 
+### Via npm (Recommended)
+
+Header Maker is available as an npm package. To install it globally, run:
+
+```bash
+npm install -g header-maker
+```
+## Manual Installation from GitHub
 Clone the repository and make the script executable:
 
 ```bash
-git clone https://github.com/yourusername/header-maker.git
+git clone https://github.com/KMean/header-maker.git
 cd header-maker
-chmod +x header.sh
+chmod +x bin/header.sh
 ```
+Then run the script directly:
+
+```bash
+./bin/header.sh --py "My Header Title"
+```
+## Installation via install.sh Script
+You can also install Header Maker into /usr/local/bin using the provided install.sh script:
+
+```bash
+curl -o install.sh https://raw.githubusercontent.com/KMean/header-maker/main/install.sh
+chmod +x install.sh
+sudo ./install.sh
+```
+This downloads the header script and places it as header in /usr/local/bin, allowing you to run:
+
+```bash
+header --py "My Header Title"
+```
+Note: Installing to /usr/local/bin requires sudo privileges.
 
 ## Usage
 Run the script with your desired options. Here are a few examples:
 
-```bash
-./header.sh --py "My Header Title"
-```
+## Basic Usage
+Generate a simple Python header with a centered title:
 
-## Advanced Usage
+```bash
+header --sol "My Header Title"
+```
+Example Output:
+```bash
+//----------------------------------------------------------------------//
+//                           My Header Title                            //
+//----------------------------------------------------------------------//
+```
+Advanced Usage
 Generate a Python header with a timestamp in the border, right-aligned title, dynamic template, and a footer:
-```bash
-./header.sh --py --timestamp --align right --template "Author: \$USER, Date: \$(date '+%Y-%m-%d')" --footer "END OF SCRIPT" "Custom Header Title" "Additional Info"
-```
-```bash
-//---------- 2025-02-14 15:42:10 -----------//
-//             Custom Header Title          //
-//             Additional Info              //
-//  Author: yourusername, Date: 2025-02-14  //
-//---------- 2025-02-14 15:42:10 -----------//
-```
-
-## Custom Border Example
-Generate a JavaScript header with a custom border character (#):
 
 ```bash
-./header.sh --js --char "#" "JS Header"
+header --py --timestamp --align right --template "Author: \$USER, Date: \$(date '+%Y-%m-%d')" --footer "END OF SCRIPT" "Custom Header Title" "Additional Info"
 ```
+
+Example Output:
 
 ```bash
 //---------- 2025-02-14 15:42:10 -----------//
 //             Custom Header Title          //
 //             Additional Info              //
-//  Author: yourusername, Date: 2025-02-14  //
+//  Author: yourusername, Date: 2025-02-14    //
 //---------- 2025-02-14 15:42:10 -----------//
-```
-```bash
+
 //----------#############################----------//
 //                   END OF SCRIPT                 //
 //----------#############################----------//
 ```
+## Custom Border Example
+Generate a JavaScript header with a custom border character (#):
 
+```bash
+header --js --char "#" "JS Header"
+```
+Example Output:
+
+```bash
+//---------- 2025-02-14 15:42:10 -----------//
+//                 JS Header                //
+//---------- 2025-02-14 15:42:10 -----------//
+```
 ## Contributing
 Contributions are welcome! Feel free to fork the repository, open issues, and submit pull requests for improvements or additional features.
