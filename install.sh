@@ -12,5 +12,5 @@ curl -o "$INSTALL_DIR/$SCRIPT_NAME" "https://raw.githubusercontent.com/KMean/hea
 # Make it executable
 chmod +x "$INSTALL_DIR/$SCRIPT_NAME"
 
-echo "Installation complete! Use 'header --py \"Title\"' to generate headers."
-echo "For more information, visit 
+echo "Installation complete! Use 'header --py \"YOUR AWESOME HEADER\"' to generate headers."
+echo "For more information, visit https://github.com/KMean/header-maker."

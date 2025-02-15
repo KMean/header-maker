@@ -1,6 +1,6 @@
 # Header Maker
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub release](https://img.shields.io/github/release/KMean/header-maker.svg)](https://github.com/KMean/header-maker/releases)
+[![GitHub release](https://img.shields.io/github/release/KMean/header-maker.svg)](https://github.com/KMean/header-maker/releases/)
 [![Build Status](https://img.shields.io/github/workflow/status/KMean/header-maker/CI)](https://github.com/KMean/header-maker/actions)
 
 Header Maker is a versatile header generation tool for your source code files. It supports multiple languages and provides customizable options like timestamps, footers, custom alignment, multiline titles, and dynamic templates to make your code headers both informative and consistent.
@@ -109,14 +109,14 @@ Example Output:
 Generate a Solidity header with a custom border character (#):
 
 ```bash
-header --sol --char "%" "My Header Title"
+header --html --char "+" "My Header Title"
 ```
 Example Output:
 
 ```bash
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-//                           My Header Title                            //
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!--                          My Header Title                          -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 ```
 ## Contributing
 Contributions are welcome! Feel free to fork the repository, open issues, and submit pull requests for improvements or additional features.
