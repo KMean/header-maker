@@ -1,6 +1,6 @@
 {
   "name": "@kmean/header-maker",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "A versatile header generator for source code files.",
   "bin": {
     "header": "bin/header.sh"
