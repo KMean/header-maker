@@ -72,6 +72,33 @@ check what options you have by running
 ```bash
 header -h
 ```
+```bash
+Usage: header [--py | --html | --sql | --js | --c | --java | --sh | --css | --php | --go | --rs | --lua | --sol] [options] <title lines>
+
+Options:
+  --py         Python header (#)
+  --sql        SQL header (--)
+  --html       HTML header (<!-- -->)
+  --js         JavaScript header (//)
+  --c          C/C++ header (//)
+  --java       Java header (//)
+  --sh         Shell/Bash header (#)
+  --css        CSS header (/* */)
+  --php        PHP header (//)
+  --go         Go header (//)
+  --rs         Rust header (//)
+  --lua        Lua header (--)
+  --sol        Solidity header (// or /* */)
+  --width      Set custom total width (default: 74)
+  --padding    Set custom padding width (default: auto)
+  --char       Set custom border character (default: '-')
+  --align      Set alignment: left, center, or right (default: center)
+  --timestamp  Insert current timestamp in the border lines
+  --template   Add a template line (supports shell variables, e.g. $USER, $(date))
+  --footer     Add a footer block below the header
+  --uppercase or --uc  Convert title (and template/footer) to uppercase
+  --help       Show this help message
+```
 Run the script with your desired options. Here are a few examples:
 
 ## Basic Usage
