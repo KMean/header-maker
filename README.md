@@ -86,6 +86,15 @@ Example Output:
 //                           My Header Title                            //
 //----------------------------------------------------------------------//
 ```
+```bash
+header --py "My Header Title"
+```
+Example Output:
+```bash
+#------------------------------------------------------------------------#
+#                            My Header Title                             #
+#------------------------------------------------------------------------#
+```
 Advanced Usage
 Generate a Solidity header with a timestamp in the border, right-aligned title, dynamic template, and a footer:
 
