@@ -54,7 +54,7 @@ Then run the script directly:
 You can also install Header Maker into /usr/local/bin using the provided install.sh script:
 
 ```bash
-curl -o install.sh https://raw.githubusercontent.com/KMean/header-maker/main/install.sh
+curl -o install.sh https://raw.githubusercontent.com/KMean/header-maker/master/install.sh
 chmod +x install.sh
 sudo ./install.sh
 ```
