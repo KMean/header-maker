@@ -261,12 +261,12 @@ if [[ "$COMMENT_CHAR" ]]; then
     else
       case "$ALIGN" in
         left)
-          left_spaces=0
-          right_spaces=$(( avail_width - text_length ))
+          left_spaces=1
+          right_spaces=$(( avail_width - text_length - left_spaces ))
           ;;
         right)
-          left_spaces=$(( avail_width - text_length ))
-          right_spaces=0
+          left_spaces=$(( avail_width - text_length - 1 ))
+          right_spaces=1
           ;;
         center)
           left_spaces=$(( (avail_width - text_length) / 2 ))

@@ -86,16 +86,28 @@ Example Output:
 //                           My Header Title                            //
 //----------------------------------------------------------------------//
 ```
-Generate a simple Python header with a centered title:
+Generate a simple Python header with right aligned title:
 ```bash
-header --py "My Header Title"
+header --py --align right "My Header Title"
 ```
 Example Output:
 ```bash
 #------------------------------------------------------------------------#
-#                            My Header Title                             #
+#                                                        My Header Title #
 #------------------------------------------------------------------------#
 ```
+
+Generate a simple HTML Header with centered Uppercase title
+```bash
+header --html --uc  "My Header Title"
+```
+Example Output:
+```
+<!-- ----------------------------------------------------------------- -->
+<!--                          MY HEADER TITLE                          -->
+<!-- ----------------------------------------------------------------- -->
+```
+
 Advanced Usage
 Generate a Solidity header with a timestamp in the border, right-aligned title, dynamic template, and a footer:
 
