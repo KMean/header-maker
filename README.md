@@ -109,7 +109,7 @@ Example Output:
 ```
 
 Advanced Usage
-Generate a Solidity header with a timestamp in the border, right-aligned title, dynamic template, and a footer:
+Generate a Solidity header with a timestamp in the border, center-aligned title, dynamic template, and a footer:
 
 ```bash
 header --sol --timestamp --template "Author: \$USER, Date: \$(date '+%Y-%m-%d')" --footer "END OF SCRIPT" "Custom Header Title" "Additional Info"
