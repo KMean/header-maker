@@ -129,7 +129,7 @@ Example Output:
 //----------------------------------------------------------------------//
 ```
 ## Custom Border Example
-Generate a Solidity header with a custom border character (#):
+Generate a Solidity header with a custom border character (+):
 
 ```bash
 header --html --char "+" "My Header Title"
