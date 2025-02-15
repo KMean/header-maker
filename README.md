@@ -135,7 +135,7 @@ Example Output:
 <!-- ----------------------------------------------------------------- -->
 ```
 
-Advanced Usage
+## Advanced Usage
 Generate a Solidity header with a timestamp in the border, center-aligned title, dynamic template, and a footer:
 
 ```bash
