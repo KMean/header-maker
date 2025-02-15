@@ -75,7 +75,7 @@ header -h
 Run the script with your desired options. Here are a few examples:
 
 ## Basic Usage
-Generate a simple Python header with a centered title:
+Generate a simple Solidity header with a centered title:
 
 ```bash
 header --sol "My Header Title"
@@ -86,6 +86,7 @@ Example Output:
 //                           My Header Title                            //
 //----------------------------------------------------------------------//
 ```
+Generate a simple Python header with a centered title:
 ```bash
 header --py "My Header Title"
 ```
