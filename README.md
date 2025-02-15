@@ -35,7 +35,8 @@ Header Maker is a versatile header generation tool for your source code files. I
 Header Maker is available as an npm package. To install it globally, run:
 
 ```bash
-npm install -g header-maker
+npm install -g @kmean/header-maker
+
 ```
 ## Manual Installation from GitHub
 Clone the repository and make the script executable:
